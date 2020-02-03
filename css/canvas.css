@@ -1,0 +1,306 @@
+.canvas-wrap {
+    max-width: 1280px;
+    display: none;
+}
+
+.canvas-container {
+    flex-basis: 40%;
+    padding: 10px;
+    background-image: url(../img/bacground.png);
+    background-size: cover;
+}
+
+#my-canvas {
+    margin: 20px auto;
+    display: block;
+}
+
+.controllers-container {
+    flex-basis: 40%;
+    box-shadow: 1px 5px 0 #33363e, inset 0 5px 0 #33363e;
+    border-radius: 30px;
+    background-color: #383b42;
+}
+
+.controllers-container>input {
+    width: 90%;
+    height: 43px;
+    box-shadow: 1px 5px 0 #bbc4d1, inset 0 5px 0 #ffffff;
+    border-radius: 28px;
+    background-color: #ebeef3;
+    color: #3d3d3d;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.general-btn-container>* {
+    margin-left: 7px;
+}
+
+.delete-btn {
+    width: 58px;
+    height: 53px;
+    box-shadow: 1px 5px 0 #8c0606, inset 0 5px 0 rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    background-color: #ebeef3;
+    background-image: linear-gradient(-38deg, #cf1d37 0%, #cf1d37 1%, #f05036 100%);
+}
+
+.delete-btn:before {
+    content: url(../img/buttons/delete.png);
+}
+
+.add-btn {
+    width: 58px;
+    height: 53px;
+    box-shadow: 1px 5px 0 #015d33, inset 0 5px 0 rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    background-color: #ebeef3;
+    background-image: linear-gradient(-38deg, #42eb5c 0%, #37b34a 100%);
+}
+
+.add-btn:before {
+    content: url(../img/buttons/+.png);
+}
+
+
+
+
+.switch-btn {
+    width: 57px;
+    height: 53px;
+    box-shadow: 1px 5px 0 #048b97, inset 0 5px 0 rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    background-color: #ebeef3;
+    background-image: linear-gradient(-38deg, #66c4dc 0%, #40b1ce 50%, #0c98bb 100%);
+}
+
+.switch-btn:before {
+    content: url(../img/buttons/up.png) url(../img/buttons/down.png);
+}
+
+.up-btn {
+    width: 57px;
+    height: 53px;
+    box-shadow: 1px 5px 0 #FFE000, inset 0 5px 0 rgba(193, 212, 20, 0.58);
+    border-radius: 10px;
+    background: #FFE000;
+    background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
+    background: linear-gradient(to right, #799F0C, #FFE000);
+}
+
+.up-btn:before {
+    content: url(../img/buttons/up.png);
+}
+
+.down-btn {
+    width: 57px;
+    height: 53px;
+    box-shadow: 1px 5px 0 #FFE000, inset 0 5px 0 rgba(193, 212, 20, 0.58);
+    border-radius: 10px;
+    background: #FFE000;
+    background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
+    background: linear-gradient(to right, #799F0C, #FFE000);
+}
+
+.down-btn:before {
+    content: url(../img/buttons/down.png);
+}
+
+.text-btn-container {
+    width: 90%;
+    height: 160px;
+    border-radius: 15px;
+    background-color: #19a59f;
+}
+
+.text-btn-container>* {
+    margin-left: 20px;
+}
+
+.text-btn-container button {
+    width: 45px;
+    height: 45px;
+    box-shadow: 1px 5px 0 rgba(92, 92, 92, 0.55), inset 0 5px 0 rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.text-btn-container input {
+    max-width: 200px;
+    text-align: center;
+    height: 50px;
+    box-shadow: 1px 5px 0 rgba(92, 92, 92, 0.55), inset 0 5px 0 rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #22252c;
+    font-size: 1.6875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.increase:before {
+    content: url(../img/buttons/A+.png);
+}
+
+.decrease:before {
+    content: url(../img/buttons/A-.png);
+}
+
+.text-align-left:before {
+    content: url(../img/buttons/left.png);
+}
+
+.text-align-center:before {
+    content: url(../img/buttons/center.png);
+}
+
+.text-align-right:before {
+    content: url(../img/buttons/right.png);
+}
+
+.small:before {
+    content: url(../img/buttons/s.png);
+}
+
+.color:before {
+    content: url(../img/buttons/color.png);
+}
+
+#color {
+    display: none;
+}
+
+.stroke-color:before {
+    content: url(../img/buttons/brush-stroke.png);
+}
+
+#stroke-color {
+    display: none;
+}
+
+.emoji-container {
+    position: relative;
+    width: 420px;
+    height: 91px;
+    border-radius: 45px;
+    margin-top:10px;
+    background-color: #ffffff;
+}
+.emoji-container>*{
+    cursor: pointer;
+}
+.arrow-btn{
+    width:3%;
+    position: absolute;
+    top:40%;
+}
+
+.emoji-container  .left{
+    left:15px;
+}
+.emoji-container  .right{   
+    right:15px;
+}
+.stricker{
+    width:20%;
+    height: 90%;
+}
+
+
+.bottom-btn-container>* {
+    color: white;
+    width: 180px;
+    height: 46px;
+    border-radius: 15px;
+    margin:10px 5px
+}
+
+.download {
+    box-shadow: 1px 6px 0 #632687, inset 0 5px 0 #ffffff;
+    background-color: #8f44bb;
+}
+
+.share {
+    box-shadow: 1px 6px 0 #165c9c, inset 0 5px 0 #ffffff;
+    border-radius: 15px;
+    background-color: #1e7cd3;
+}
+
+.save {
+    box-shadow: 1px 6px 0 #eb4402, inset 0 5px 0 #ffffff;
+    border-radius: 15px;
+    background-color: #eb4402;
+}
+
+.btn-share {
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    .controllers-container {
+        min-height: 600px;
+    }
+    .emoji-container {
+        width: 370px;
+        
+    }
+    .text-btn-container {
+        height: 185px;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .canvas-wrap {
+        flex-direction: column;
+        align-items: center;
+        /* display: block ;  */
+    }
+    .controllers-container {
+        width: 100%;
+        min-height: 540px;
+    }
+    .txt-input {
+        margin-top: 10px;
+    }
+    .txt-btn-container input {
+        margin-top: 2px;
+    }
+    .canvas-container {
+        padding: 0;
+    }
+    #my-canvas {
+        width: 300px;
+        height: 300px;
+    }
+    .bottom-btn-container {
+        flex-direction: column;
+    }
+    .text-btn-container {
+        height: 227px;
+        padding: 10px;
+    }
+    .text-btn-container input {
+        width: 115px;
+    }
+    .bottom-btn-container>* {
+        margin: 8px;
+    }
+    .general-btn-container {
+        margin: 20px 5px;
+    }
+    .general-btn-container>* {
+        width: 54px;
+        height: 45px;
+        margin-left: 8px;
+    }
+
+    .emoji-container {
+        width: 320px;
+        
+    }
+}
